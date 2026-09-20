@@ -133,6 +133,7 @@ Final Project 為 **Library Management System**，將 Books、Users、Loans 三�
 
 - **Portfolio:** https://chenhan0301.github.io/Myweb/
 - **Full learning journey:** [LEARNING-JOURNEY.md](./LEARNING-JOURNEY.md)
+- **Academic coursework & capability map:** [ACADEMIC-COURSEWORK.md](./ACADEMIC-COURSEWORK.md)
 - **GitHub profile:** https://github.com/chenhan0301
 
 ---
