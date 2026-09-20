@@ -1,6 +1,6 @@
 # 大學四年學習歷程｜2022–2026
 
-這份文件整理我在國立臺灣師範大學四年間，從人力資源背景走向資訊工程、資料分析、系統實作與 AI 研究的完整學習軌跡。
+這份文件整理我在國立臺灣師範大學四年間，從人力資源背景走向資訊工程、資料分析、系統實作與 AI 研究的完整學習軌跡。大學期間共修習 66 門課、實得 159 學分，並完成資訊工程雙主修與全英語學分學程。
 
 它不是履歷的另一個版本，而是回答一個更重要的問題：
 
@@ -246,11 +246,36 @@ Decision Support
 
 ---
 
+## Applied AI｜Personal AI Agent
+
+除了 LexiAI，我也在課程中完成個人 AI Agent 專案，將 Telegram 語音／文字輸入、外部資訊取得、Agent 分析與 Notion API 串成雙軌輸出知識管線。
+
+這個專案讓我真正遇到：
+- Structured output stability
+- JSON escaping
+- API permission scope
+- Workflow orchestration
+- Data persistence
+
+[Read AI Agent project documentation](./PROJECTS/AI-AGENT.md)
+
+## Selected recognition
+
+- 2025 第八屆「致青春・創未來」全國選拔大賽科技應用組優等獎
+- 系上專題製作成果展優等
+- 第十三屆、第十五屆程式設計通識課程專題佳作
+- 五育獎學金美育獎
+
+[Recognition & evidence index](./RECOGNITION.md)
+
+---
+
 # From Project to Research｜2026
 
-目前我的研究計畫進一步聚焦：
+目前我的研究方向沿著同一個 Trustworthy AI 核心，形成兩條應用路線：
 
-## 生成式 AI 面試回饋之證據可追溯性對面試表現之影響
+## HRD / People & Learning
+### 生成式 AI 面試回饋之證據可追溯性對面試表現之影響
 
 核心問題：
 
@@ -265,6 +290,13 @@ Decision Support
 - Learning Transfer
 - BARS
 - Human–AI Interaction
+
+## Information Systems / FinTech
+### 金融防詐決策支援系統之設計與評估：整合可追溯證據與校準不確定性
+
+另一條研究路線把相同的「可追溯證據」問題延伸到金融防詐與 Human–AI Reliance，關注模型不確定性、證據來源與人機分歧時的適當依賴。
+
+兩條路線的情境不同，但核心一致：**AI 不應只產生答案，而應讓使用者有能力理解、核對並做出更好的最終判斷。**
 
 這代表我的大學學習軌跡從：
 
