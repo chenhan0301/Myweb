@@ -1,264 +1,376 @@
-
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="董承翰｜國立臺灣師範大學科技應用與人力資源發展學系、人資與資訊工程跨域背景。研究興趣聚焦生成式 AI、人才甄選、可解釋與可追溯決策支援。">
+  <meta name="author" content="董承翰 Chenhan Tung">
+  <meta property="og:title" content="董承翰 Chenhan Tung｜Graduate Admissions Portfolio">
+  <meta property="og:description" content="HR × Computer Science × AI Decision Support">
+  <meta property="og:type" content="website">
+  <title>董承翰 Chenhan Tung｜Graduate Admissions Portfolio</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="blog.css">
+</head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.115.4">
-    <title>About Chenhan</title>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="#top" aria-label="回到首頁">
+        <span class="brand-mark">CH</span>
+        <span>
+          董承翰 Chenhan Tung
+          <small>Graduate Admissions Portfolio · 2026</small>
+        </span>
+      </a>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
-
-    
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="social.ico" rel="shortcut icon"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-    </style>
-
-    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
-    <link href="blog.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-    
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10"/>
-    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
-  </symbol>
-  <symbol id="cart" viewBox="0 0 16 16">
-    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-  </symbol>
-  <symbol id="chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-  </symbol>
-</svg>
-
-<div class="container">
-  <header class="border-bottom lh-1 py-3">
-    <div class="row flex-nowrap justify-content-center align-items-center">
-        <div class="col-4 text-center">
-          <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">About Me</a>
-        </div>
+      <nav class="nav-links" aria-label="主要導覽">
+        <a href="#about">關於我</a>
+        <a href="#research">研究方向</a>
+        <a href="#project">專題成果</a>
+        <a href="#experience">經歷</a>
+        <a href="#credentials">能力與證照</a>
+      </nav>
     </div>
   </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">HR × Computer Science × AI</div>
+          <h1>以人資問題為核心，<br>用技術打造可信任的決策支援。</h1>
+          <p class="hero-lead">
+            我目前就讀國立臺灣師範大學科技應用與人力資源發展學系，並雙主修資訊工程。
+            大學期間逐步將人力資源、資料分析與軟體實作整合，關注生成式 AI 在人才甄選、
+            面試回饋與決策支援中的應用，以及系統如何提供更具證據性、可解釋性與可追溯性的資訊。
+          </p>
 
+          <div class="chip-row" aria-label="核心標籤">
+            <span class="chip">Human Resources</span>
+            <span class="chip">Generative AI</span>
+            <span class="chip">Data Analytics</span>
+            <span class="chip">Decision Support</span>
+            <span class="chip">Explainability</span>
+            <span class="chip">Information Security</span>
+          </div>
 
-  <div class="nav-scroller py-1 mb-3 border-bottom">
-    <nav class="nav nav-underline justify-content-between">
-      <a class="nav-item nav-link link-body-emphasis active"  href="https://github.com/chenhan0301/Web">專題成果</a>
-      <a class="nav-item nav-link link-body-emphasis active"  href="https://www.facebook.com/profile.php?id=100008238215875">個人Facebook</a>
-      <a class="nav-item nav-link link-body-emphasis active"  href="https://www.instagram.com/chenhann3.1/">個人Instagram</a>
-      <a class="nav-item nav-link link-body-emphasis active"  href="https://www.ntnu.edu.tw/">學校資訊</a>
-      <a class="nav-item nav-link link-body-emphasis active"  href="https://www.tahrd.ntnu.edu.tw/">系所資訊</a>
-    </nav>
-  </div>
-</div>
-
-<main class="container">
-  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-    <div class="col-lg-4 px-0">
-      <h2 class="display-5 link-body-emphasis mb-1" style="font-family: 'Taipei Sans TC-B', sans-serif;">我的簡介</h2>
-      <p class="lead my-3" >轉眼間已經成為一個大學生<br>期許自己能在未來幾年完成想做的事<br>並且隨時保持開心!</p>
-      <p class="lead my-3" style="font-family: 'Taipei Sans TC-R', sans-serif;">To be continued...</p>
-      
-      
-
-    </div>
-  </div>
-<div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">經歷</strong>
-          <h3 class="mb-0">幹部經歷</h3>
-          <!--div class="mb-1 text-body-secondary">Nov 12</div-->
-          <p class=" mb-auto"></p>
-          <strong class=" mb-auto">師大熱音社-攝影</strong>
-          <strong class=" mb-auto">師大科技系學會-體育股員</strong>
-          <strong class=" mb-auto">師大科技系-學生會代表</strong>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            請繼續閱讀!
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
+          <div class="hero-actions">
+            <a class="button primary" href="#project">查看代表專題</a>
+            <a class="button secondary" href="https://github.com/chenhan0301" target="_blank" rel="noopener">GitHub Profile ↗</a>
+          </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img class="bd-placeholder-img" width="300" height="250" src="img/me.jpg">
+
+        <aside class="profile-panel" aria-label="個人摘要">
+          <div class="profile-kicker">Profile Snapshot</div>
+          <h2>跨域學習不是附加項目，而是我的研究方法。</h2>
+          <p>
+            從人資課程中的選才、訓練與人員數據分析，到資訊工程中的程式設計、資料庫與系統實作，
+            我希望將兩種訓練整合成可落地的研究與產品能力。
+          </p>
+
+          <div class="profile-list">
+            <div class="profile-item">
+              <span>University</span>
+              <strong>國立臺灣師範大學 National Taiwan Normal University</strong>
+            </div>
+            <div class="profile-item">
+              <span>Major</span>
+              <strong>科技應用與人力資源發展學系・人力資源組</strong>
+            </div>
+            <div class="profile-item">
+              <span>Double Major</span>
+              <strong>資訊工程學系 Computer Science</strong>
+            </div>
+            <div class="profile-item">
+              <span>Research Focus</span>
+              <strong>AI × HR Analytics × Trustworthy Decision Support</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">About</div>
+            <h2>從「會做系統」走向「知道系統應該解決什麼問題」。</h2>
+          </div>
+          <p>
+            我的學習歷程不是單純把人資與資工兩個領域並列，而是持續嘗試將組織與人才問題轉譯成可被分析、
+            建模與實作的資訊問題。相較只追求模型輸出，我更在意使用者如何理解結果、結果能否被驗證，
+            以及系統如何真正支援而不是取代人的判斷。
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-number">01 · HR FOUNDATION</div>
+            <h3>人力資源與學習發展</h3>
+            <p>
+              修習人力資源發展、人力資源管理、人員數據分析、訓練需求與成效評估等課程，
+              建立選才、人才發展、評估與資料導向決策的基礎。
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02 · TECHNICAL BUILD</div>
+            <h3>資訊工程與系統實作</h3>
+            <p>
+              透過雙主修資訊工程，累積程式、資料庫、網站與系統建置能力，
+              能將研究構想進一步轉換為可操作的原型與實際介面。
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03 · RESEARCH MINDSET</div>
+            <h3>從產品實作回到研究問題</h3>
+            <p>
+              畢業專題的實作與驗證讓我意識到：AI 輸出是否可信、能否追溯到證據，
+              以及使用者如何利用回饋形成更好的決策，是值得持續深入研究的核心問題。
+            </p>
+          </article>
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">學歷</strong>
-          <h3 class="mb-0">就讀學校</h3 >
-          <!--div class="mb-1 text-body-secondary">Nov 11</div-->
-          <p class=" mb-auto"></p>
-          <strong class="mb-auto">國立桃園高中</strong>
-          <strong class="mb-auto">國立臺灣師範大學</strong>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            請繼續閱讀!
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Research Direction</div>
+            <h2>目前關注的研究主軸</h2>
+          </div>
+          <p>
+            推甄階段的研究規劃延續自 LexiAI 專題，但進一步把焦點從「系統能不能產生分析」
+            推進到「AI 回饋的設計如何影響使用者理解、學習與表現」。
+          </p>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img class="bd-placeholder-img" width="200" height="200" src="img/ntnu.png">
-        </div>
-      </div>
-    </div>
-  </div>
 
-
-  
-  <div class="row g-5">
-    <div class="col-md-8">
-      <h3 class="pb-4 mb-4 fst-italic border-bottom" style="font-family: 'Taipei Sans TC-B', sans-serif;">我的自傳</h3>
-
-      <article class="blog-post">
-        <h2 class="blockquote" style="font-family: 'Taipei Sans TC-B', sans-serif;">基本資料</h2>
-        <p class="blog-post-meta">September 15, 2023 by <a href="https://www.instagram.com/chenhann3.1/">Chenhan</a></p>
-
-        <p style="font-family: 'Taipei Sans TC-L', sans-serif;">我畢業於桃園高中，在各種因緣際會下來到了科技系，很幸運地在這邊遇到了許多志同道合的朋友，在未來的幾年我期望自己學習到更專業的知識和技能，並且除在除了課業之外的面向都能有所學習</p>
-        <hr>
-        <p style="font-family: 'Taipei Sans TC-L', sans-serif;">在我的閒暇時間，我喜歡聽音樂，聽音樂讓我在空閒的時刻感到放鬆，我忙碌的時候則能夠紓解我的壓力，而我同時也喜歡打籃球，還在前幾年愛上了撞球，期待能和不同的人切磋交流~</p>
-        <h2 class="blockquote" style="font-family: 'Taipei Sans TC-B', sans-serif;">學習願景</h2>
-        <p class="blog-post-meta">September 15, 2023 by <a href="https://www.instagram.com/chenhann3.1/">Chenhan</a></p>
-
-        <p style="font-family: 'Taipei Sans TC-L', sans-serif;">在我的大學四年中，我希望不僅能夠將系上的知識學起來，也想學習許多更進階的資訊知識，因此選擇雙主修資工系，並且也修習教育學程，將來有機會的話也能成為一名老師。</p><hr>
-        <h2 class="blockquote" style="font-family: 'Taipei Sans TC-B', sans-serif;">個人特質</h2>
-        <li>活潑外向 - 我喜歡認識不同的人，也喜歡熱鬧開心的氛圍~</li>
-        <li>幽默健談 - 和熟悉的人相處時，我總是會展現出自己幽默的一面!</li>
-        <li>喜換旅行 - 我喜歡探索世界的各個角落，體驗不同的風俗民情!</li>
-        <p class="blog-post-meta">September 16, 2023 by <a href="https://www.instagram.com/chenhann3.1/">Chenhan</a></p>
-
-    </div>
-
-    <div class="col-md-4">
-      <div class="position-sticky" style="top: 2rem;">
-        <div class="p-9 mb-8 bg-body-tertiary rounded">
-          <h4 class="blockquote" style="font-family: 'Taipei Sans TC-B', sans-serif;">網頁簡介</h4>
-          <p class="mb-0" class="fst-italic" style="font-family: 'Taipei Sans TC-L', sans-serif;">這是我第一個學習架設的網站，也希望大家能透過網站更了解我，歡迎各位的指教<br><br>基本資料:畢業於桃園高中<br>生日:2004年3月1日<br>就讀學校:<br>國立臺灣師範大學科技應用與人力資源發展學系<br><br></p>
-        </div>
-        <div class="p-4">
-          <h4 class="fst-italic" style="font-family: 'Taipei Sans TC-B', sans-serif;">社群連結</h4>
-          <ol class="list-unstyled">
-            <li><a href="https://github.com/chenhan0301/Web">GitHub</a></li>
-            <li><a href="https://www.instagram.com/chenhann3.1/">instagram</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100008238215875">Facebook</a></li>
-            <li><a href="https://youtube.com/@chenhan0301?si=5gTVbsluGFe-67T9">YouTube</a></li>
-          </ol>
+        <div class="research-box">
+          <div class="eyebrow">Current Research Proposal</div>
+          <h3>生成式 AI 面試回饋之證據可追溯性對面試表現之影響</h3>
+          <p>
+            研究關注生成式 AI 回饋若能將建議明確連結至使用者原始回答中的具體證據，
+            是否能提升回饋理解、反思與後續新題情境中的表現遷移。研究設計預計採 T1 作答、
+            AI 回饋與 T2 新題作答流程，並以行為錨定評量與人工盲評衡量面試表現。
+          </p>
+          <div class="research-tags">
+            <span>Evidence Traceability</span>
+            <span>Interview Feedback</span>
+            <span>Learning Transfer</span>
+            <span>Metacognition</span>
+            <span>BARS</span>
+            <span>Human–AI Interaction</span>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section id="project" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Featured Project</div>
+            <h2>LexiAI｜可信任選才決策支援</h2>
+          </div>
+          <p>
+            LexiAI 是我大學階段最重要的整合型專題。團隊從企業甄選情境出發，完成非同步面試、
+            語音轉文字、LLM 分析與網頁報表呈現的完整流程。我主要投入 Prompt／評估邏輯與報表介面實作。
+          </p>
+        </div>
+
+        <div class="project-shell">
+          <article class="project-intro">
+            <div class="mini-label">Product-minded Capstone</div>
+            <h3>不是只做模型，而是把整個選才流程做成可操作系統。</h3>
+            <p>
+              系統將候選人的面試回答轉為結構化分析，整理回答完整性、內容品質、優勢與不足、
+              追問建議、人格／特質、溝通表現、整體適配與發展建議，並以儀表板形式提供決策參考。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">查看報表 Demo ↗</a>
+              <a class="button secondary" href="https://github.com/chenhan0301/Report-template" target="_blank" rel="noopener">查看程式碼 ↗</a>
+            </div>
+          </article>
+
+          <div class="project-detail">
+            <article class="card">
+              <div class="mini-label">My Contribution</div>
+              <h3>Prompt／評估邏輯 ＋ 網頁報表與儀表板</h3>
+              <p>
+                我參與整體流程設計，並集中負責面試分析 Prompt 與評估邏輯的反覆調整，
+                同時將資訊工程課程所學運用於報表頁面、資料呈現與視覺化介面。
+              </p>
+
+              <div class="pipeline" aria-label="LexiAI 流程">
+                <div class="pipeline-step"><span>STEP 01</span><strong>非同步面試</strong></div>
+                <div class="pipeline-step"><span>STEP 02</span><strong>語音轉文字</strong></div>
+                <div class="pipeline-step"><span>STEP 03</span><strong>LLM 分析</strong></div>
+                <div class="pipeline-step"><span>STEP 04</span><strong>決策支援報表</strong></div>
+              </div>
+            </article>
+
+            <div class="evidence-note">
+              <strong>研究結果也改變了我們對產品的定位。</strong>
+              專題的人格文字分析與傳統參考分數同向度相關普遍偏弱，因此我們不將 LexiAI 宣稱為傳統面試的替代工具；
+              更合理的定位是「互補式決策支援」：提供結構化語言證據、追問方向與分析報表，補充人類面試官的判斷。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Experience</div>
+            <h2>研究之外，我也累積跨團隊協作與執行經驗。</h2>
+          </div>
+          <p>
+            我希望推甄資料呈現的不只是課程成績，而是能把問題定義、協作、實作與成果交付串起來的能力。
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-time">畢業專題／專展</div>
+            <div class="timeline-content">
+              <h3>畢業專展總籌・跨系聯展協作</h3>
+              <p>
+                擔任畢業專展總籌，協調科技系與設計相關合作事項；同時參與網路組與專題網站工作，
+                累積大型活動規劃、跨角色溝通與實際交付經驗。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-time">學生組織</div>
+            <div class="timeline-content">
+              <h3>系學會與學生代表經驗</h3>
+              <p>
+                曾參與系學會體育事務與系級活動，培養在團隊內協調、執行與面對不同利害關係人的能力。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-time">社團經驗</div>
+            <div class="timeline-content">
+              <h3>熱音社攝影幹部</h3>
+              <p>
+                透過社團影像紀錄與活動支援，累積視覺溝通、現場協作與內容整理能力。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-time">教學工作</div>
+            <div class="timeline-content">
+              <h3>補習班輔導老師</h3>
+              <p>
+                具兩年輔導與教學現場經驗，讓我更熟悉如何理解學習者狀態、拆解問題與提供具體回饋。
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Credentials & Skills</div>
+            <h2>以研究可用性為導向累積能力。</h2>
+          </div>
+          <p>
+            我的能力組合主要服務於三件事：理解人資情境、處理與分析資料、把研究概念做成可測試的系統。
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card credential">
+            <div class="mini-label">English</div>
+            <strong>TOEIC 895</strong>
+            <span>Listening 485 · Reading 410</span>
+          </article>
+
+          <article class="card credential">
+            <div class="mini-label">HR Certification</div>
+            <strong>aPHRi</strong>
+            <span>Associate Professional in Human Resources – International</span>
+          </article>
+
+          <article class="card credential">
+            <div class="mini-label">Academic English</div>
+            <strong>EMI Certificate</strong>
+            <span>English-Medium Instruction program completion</span>
+          </article>
+        </div>
+
+        <div class="grid-2" style="margin-top:18px;">
+          <article class="card skill-card">
+            <div class="mini-label">Human Resources</div>
+            <h3>HR & People Analytics</h3>
+            <div class="skill-row">
+              <span>Human Resource Development</span>
+              <span>Human Resource Management</span>
+              <span>People Analytics</span>
+              <span>Training Evaluation</span>
+              <span>Talent Selection</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <div class="mini-label">Technology</div>
+            <h3>Programming & System Building</h3>
+            <div class="skill-row">
+              <span>Web Development</span>
+              <span>Database</span>
+              <span>Data Analysis</span>
+              <span>Prompt Engineering</span>
+              <span>Dashboard Design</span>
+              <span>LLM Application</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <div class="eyebrow">Portfolio</div>
+            <h2>這個網站將持續作為我的研究與專案索引。</h2>
+            <p>
+              推甄階段我希望以公開、可驗證的方式呈現實作成果。你可以從 GitHub 查看程式與專案，
+              或直接開啟 LexiAI 報表 Demo 了解系統輸出與介面設計。
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/chenhan0301" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="button secondary" href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">LexiAI Demo ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 董承翰 Chenhan Tung · Graduate Admissions Portfolio</span>
+      <a href="#top">Back to top ↑</a>
     </div>
-  </div>
-
-</main>
-
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-  <p>Blog template built from <a href="https://getbootstrap.com/">Bootstrap</a> rewrite by <a href="https://www.instagram.com/chenhann3.1/">chenhan tung</a>.</p>
-  <p class="mb-0">
-    <a href="#" style="font-family: 'Taipei Sans TC-B', sans-serif;">回到頂端</a>
-  </p>
-</footer>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
+  </footer>
+</body>
 </html>
