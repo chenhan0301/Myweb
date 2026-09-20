@@ -1,282 +1,500 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="董承翰｜國立臺灣師範大學科技應用與人力資源發展學系、人資與資訊工程跨域背景。研究興趣聚焦生成式 AI、人才甄選、可解釋與可追溯決策支援。">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta name="description" content="董承翰 Chenhan Tung｜國立臺灣師範大學科技應用與人力資源發展學系，雙主修資訊工程。研究興趣聚焦生成式 AI、人才甄選、證據可追溯回饋與可信任決策支援。">
   <meta name="author" content="董承翰 Chenhan Tung">
-  <meta property="og:title" content="董承翰 Chenhan Tung｜Graduate Admissions Portfolio">
-  <meta property="og:description" content="HR × Computer Science × AI Decision Support">
-  <meta property="og:type" content="website">
-  <title>董承翰 Chenhan Tung｜Graduate Admissions Portfolio</title>
+  <meta name="robots" content="index, follow">
 
+  <meta property="og:title" content="董承翰 Chenhan Tung｜Graduate Research Portfolio">
+  <meta property="og:description" content="Human Resources × Computer Science × Trustworthy AI">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chenhan0301.github.io/Myweb/">
+  <meta property="og:image" content="https://chenhan0301.github.io/Myweb/img/me.jpg">
+
+  <title>董承翰 Chenhan Tung｜Graduate Research Portfolio</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="blog.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell nav-wrap">
       <a class="brand" href="#top" aria-label="回到首頁">
-        <span class="brand-mark">CH</span>
-        <span>
-          董承翰 Chenhan Tung
-          <small>Graduate Admissions Portfolio · 2026</small>
+        <span class="brand-monogram">CH</span>
+        <span class="brand-copy">
+          <strong>董承翰</strong>
+          <small>Chenhan Tung</small>
         </span>
       </a>
 
-      <nav class="nav-links" aria-label="主要導覽">
-        <a href="#about">關於我</a>
-        <a href="#research">研究方向</a>
-        <a href="#project">專題成果</a>
-        <a href="#experience">經歷</a>
-        <a href="#credentials">能力與證照</a>
+      <nav class="desktop-nav" aria-label="主要導覽">
+        <a href="#about">Profile</a>
+        <a href="#research">Research</a>
+        <a href="#lexiai">LexiAI</a>
+        <a href="#experience">Experience</a>
+        <a href="#credentials">Credentials</a>
       </nav>
+
+      <div class="nav-actions">
+        <a class="nav-github" href="https://github.com/chenhan0301" target="_blank" rel="noopener">GitHub ↗</a>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="切換深色模式" title="切換顯示模式">
+          <span class="theme-icon-light">◐</span>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="開啟導覽" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="行動版導覽">
+      <a href="#about">Profile</a>
+      <a href="#research">Research</a>
+      <a href="#lexiai">LexiAI</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="https://github.com/chenhan0301" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">HR × Computer Science × AI</div>
-          <h1>以人資問題為核心，<br>用技術打造可信任的決策支援。</h1>
-          <p class="hero-lead">
-            我目前就讀國立臺灣師範大學科技應用與人力資源發展學系，並雙主修資訊工程。
-            大學期間逐步將人力資源、資料分析與軟體實作整合，關注生成式 AI 在人才甄選、
-            面試回饋與決策支援中的應用，以及系統如何提供更具證據性、可解釋性與可追溯性的資訊。
-          </p>
+      <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
 
-          <div class="chip-row" aria-label="核心標籤">
-            <span class="chip">Human Resources</span>
-            <span class="chip">Generative AI</span>
-            <span class="chip">Data Analytics</span>
-            <span class="chip">Decision Support</span>
-            <span class="chip">Explainability</span>
-            <span class="chip">Information Security</span>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="overline">
+            <span class="status-dot"></span>
+            GRADUATE RESEARCH PORTFOLIO · 2026
           </div>
+
+          <h1>
+            Human Resources
+            <span class="muted-symbol">×</span>
+            Computer Science
+            <span class="muted-symbol">×</span>
+            <em>Trustworthy AI</em>
+          </h1>
+
+          <p class="hero-intro">
+            我是董承翰，主修國立臺灣師範大學科技應用與人力資源發展，並雙主修資訊工程。
+            我關注的不是「AI 能不能給答案」，而是<strong>人能不能理解、驗證並放心地使用這個答案</strong>。
+          </p>
 
           <div class="hero-actions">
-            <a class="button primary" href="#project">查看代表專題</a>
-            <a class="button secondary" href="https://github.com/chenhan0301" target="_blank" rel="noopener">GitHub Profile ↗</a>
+            <a class="btn btn-primary" href="#research">
+              <span>Explore my research</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="btn btn-ghost" href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">
+              LexiAI Demo ↗
+            </a>
           </div>
-        </div>
 
-        <aside class="profile-panel" aria-label="個人摘要">
-          <div class="profile-kicker">Profile Snapshot</div>
-          <h2>跨域學習不是附加項目，而是我的研究方法。</h2>
-          <p>
-            從人資課程中的選才、訓練與人員數據分析，到資訊工程中的程式設計、資料庫與系統實作，
-            我希望將兩種訓練整合成可落地的研究與產品能力。
-          </p>
-
-          <div class="profile-list">
-            <div class="profile-item">
-              <span>University</span>
-              <strong>國立臺灣師範大學 National Taiwan Normal University</strong>
+          <div class="hero-meta">
+            <div>
+              <span>Current focus</span>
+              <strong>AI Feedback · Evidence Traceability</strong>
             </div>
-            <div class="profile-item">
-              <span>Major</span>
-              <strong>科技應用與人力資源發展學系・人力資源組</strong>
-            </div>
-            <div class="profile-item">
-              <span>Double Major</span>
-              <strong>資訊工程學系 Computer Science</strong>
-            </div>
-            <div class="profile-item">
-              <span>Research Focus</span>
-              <strong>AI × HR Analytics × Trustworthy Decision Support</strong>
+            <div>
+              <span>Academic base</span>
+              <strong>NTNU · HRD + Computer Science</strong>
             </div>
           </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">About</div>
-            <h2>從「會做系統」走向「知道系統應該解決什麼問題」。</h2>
-          </div>
-          <p>
-            我的學習歷程不是單純把人資與資工兩個領域並列，而是持續嘗試將組織與人才問題轉譯成可被分析、
-            建模與實作的資訊問題。相較只追求模型輸出，我更在意使用者如何理解結果、結果能否被驗證，
-            以及系統如何真正支援而不是取代人的判斷。
-          </p>
         </div>
 
-        <div class="grid-3">
-          <article class="card">
-            <div class="card-number">01 · HR FOUNDATION</div>
-            <h3>人力資源與學習發展</h3>
-            <p>
-              修習人力資源發展、人力資源管理、人員數據分析、訓練需求與成效評估等課程，
-              建立選才、人才發展、評估與資料導向決策的基礎。
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-number">02 · TECHNICAL BUILD</div>
-            <h3>資訊工程與系統實作</h3>
-            <p>
-              透過雙主修資訊工程，累積程式、資料庫、網站與系統建置能力，
-              能將研究構想進一步轉換為可操作的原型與實際介面。
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-number">03 · RESEARCH MINDSET</div>
-            <h3>從產品實作回到研究問題</h3>
-            <p>
-              畢業專題的實作與驗證讓我意識到：AI 輸出是否可信、能否追溯到證據，
-              以及使用者如何利用回饋形成更好的決策，是值得持續深入研究的核心問題。
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Research Direction</div>
-            <h2>目前關注的研究主軸</h2>
-          </div>
-          <p>
-            推甄階段的研究規劃延續自 LexiAI 專題，但進一步把焦點從「系統能不能產生分析」
-            推進到「AI 回饋的設計如何影響使用者理解、學習與表現」。
-          </p>
-        </div>
-
-        <div class="research-box">
-          <div class="eyebrow">Current Research Proposal</div>
-          <h3>生成式 AI 面試回饋之證據可追溯性對面試表現之影響</h3>
-          <p>
-            研究關注生成式 AI 回饋若能將建議明確連結至使用者原始回答中的具體證據，
-            是否能提升回饋理解、反思與後續新題情境中的表現遷移。研究設計預計採 T1 作答、
-            AI 回饋與 T2 新題作答流程，並以行為錨定評量與人工盲評衡量面試表現。
-          </p>
-          <div class="research-tags">
-            <span>Evidence Traceability</span>
-            <span>Interview Feedback</span>
-            <span>Learning Transfer</span>
-            <span>Metacognition</span>
-            <span>BARS</span>
-            <span>Human–AI Interaction</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="project" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Featured Project</div>
-            <h2>LexiAI｜可信任選才決策支援</h2>
-          </div>
-          <p>
-            LexiAI 是我大學階段最重要的整合型專題。團隊從企業甄選情境出發，完成非同步面試、
-            語音轉文字、LLM 分析與網頁報表呈現的完整流程。我主要投入 Prompt／評估邏輯與報表介面實作。
-          </p>
-        </div>
-
-        <div class="project-shell">
-          <article class="project-intro">
-            <div class="mini-label">Product-minded Capstone</div>
-            <h3>不是只做模型，而是把整個選才流程做成可操作系統。</h3>
-            <p>
-              系統將候選人的面試回答轉為結構化分析，整理回答完整性、內容品質、優勢與不足、
-              追問建議、人格／特質、溝通表現、整體適配與發展建議，並以儀表板形式提供決策參考。
-            </p>
-
-            <div class="hero-actions">
-              <a class="button primary" href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">查看報表 Demo ↗</a>
-              <a class="button secondary" href="https://github.com/chenhan0301/Report-template" target="_blank" rel="noopener">查看程式碼 ↗</a>
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="portrait-frame">
+            <div class="portrait-topline">
+              <span>PROFILE / 01</span>
+              <span>TAIPEI, TW</span>
             </div>
-          </article>
-
-          <div class="project-detail">
-            <article class="card">
-              <div class="mini-label">My Contribution</div>
-              <h3>Prompt／評估邏輯 ＋ 網頁報表與儀表板</h3>
-              <p>
-                我參與整體流程設計，並集中負責面試分析 Prompt 與評估邏輯的反覆調整，
-                同時將資訊工程課程所學運用於報表頁面、資料呈現與視覺化介面。
-              </p>
-
-              <div class="pipeline" aria-label="LexiAI 流程">
-                <div class="pipeline-step"><span>STEP 01</span><strong>非同步面試</strong></div>
-                <div class="pipeline-step"><span>STEP 02</span><strong>語音轉文字</strong></div>
-                <div class="pipeline-step"><span>STEP 03</span><strong>LLM 分析</strong></div>
-                <div class="pipeline-step"><span>STEP 04</span><strong>決策支援報表</strong></div>
+            <div class="portrait-media">
+              <img src="img/me.jpg" alt="董承翰個人照片">
+              <div class="portrait-gradient"></div>
+              <div class="portrait-caption">
+                <span>跨域研究與系統實作</span>
+                <strong>Chenhan Tung</strong>
               </div>
-            </article>
-
-            <div class="evidence-note">
-              <strong>研究結果也改變了我們對產品的定位。</strong>
-              專題的人格文字分析與傳統參考分數同向度相關普遍偏弱，因此我們不將 LexiAI 宣稱為傳統面試的替代工具；
-              更合理的定位是「互補式決策支援」：提供結構化語言證據、追問方向與分析報表，補充人類面試官的判斷。
             </div>
           </div>
+
+          <div class="floating-card floating-card-a">
+            <span class="floating-label">LANGUAGE</span>
+            <strong>TOEIC 895</strong>
+            <small>L485 · R410</small>
+          </div>
+
+          <div class="floating-card floating-card-b">
+            <span class="floating-label">HR</span>
+            <strong>aPHRi</strong>
+            <small>International</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell metric-strip reveal reveal-delay-2" aria-label="個人摘要">
+        <div class="metric">
+          <span class="metric-value">2</span>
+          <span class="metric-label">跨域主修<br>HRD + CS</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">01</span>
+          <span class="metric-label">代表專題<br>LexiAI</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">2Y</span>
+          <span class="metric-label">教學與輔導<br>現場經驗</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">895</span>
+          <span class="metric-label">TOEIC<br>English proficiency</span>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-heading">
+    <section class="section intro-section" id="about">
+      <div class="shell">
+        <div class="section-head reveal">
           <div>
-            <div class="eyebrow">Experience</div>
-            <h2>研究之外，我也累積跨團隊協作與執行經驗。</h2>
+            <span class="section-index">01</span>
+            <span class="eyebrow">PROFILE</span>
           </div>
-          <p>
-            我希望推甄資料呈現的不只是課程成績，而是能把問題定義、協作、實作與成果交付串起來的能力。
-          </p>
+          <h2>我想做的，是把「人的問題」轉成能被研究、驗證與實作的資訊問題。</h2>
+        </div>
+
+        <div class="profile-bento">
+          <article class="bento-card bento-story reveal">
+            <span class="card-kicker">MY ACADEMIC NARRATIVE</span>
+            <h3>從人資出發，走進資訊工程，再回到人與 AI 的互動。</h3>
+            <p>
+              人力資源訓練讓我理解選才、學習、評估與組織決策；資訊工程則讓我能把概念轉化成系統、
+              資料流程與可操作的產品。這兩條路最後在同一個問題交會：當 AI 開始參與高影響決策，
+              我們如何讓它的建議更透明、更有證據，也更能支援人的判斷？
+            </p>
+            <div class="story-line">
+              <span>Human-centered problem</span>
+              <i></i>
+              <span>Data & system implementation</span>
+              <i></i>
+              <span>Trustworthy decision support</span>
+            </div>
+          </article>
+
+          <article class="bento-card bento-school reveal reveal-delay-1">
+            <span class="card-kicker">EDUCATION</span>
+            <img class="school-mark" src="img/ntnu.png" alt="國立臺灣師範大學">
+            <h3>National Taiwan Normal University</h3>
+            <p>科技應用與人力資源發展學系 · 人力資源組</p>
+            <p class="secondary-line">Double Major · Computer Science</p>
+          </article>
+
+          <article class="bento-card bento-focus reveal">
+            <span class="card-kicker">RESEARCH INTERESTS</span>
+            <div class="focus-list">
+              <span>Generative AI</span>
+              <span>Human–AI Interaction</span>
+              <span>Evidence Traceability</span>
+              <span>People Analytics</span>
+              <span>Decision Support</span>
+              <span>Explainable AI</span>
+            </div>
+          </article>
+
+          <article class="bento-card bento-quote reveal reveal-delay-1">
+            <span class="quote-mark">“</span>
+            <blockquote>
+              系統的價值不只在於輸出一個分數，而在於讓使用者知道這個判斷<strong>從哪裡來、為什麼成立、下一步可以怎麼做</strong>。
+            </blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research-section" id="research">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-index">02</span>
+            <span class="eyebrow">CURRENT RESEARCH</span>
+          </div>
+          <h2>把「AI 回饋」從一句建議，變成可以追溯到證據的學習介面。</h2>
+        </div>
+
+        <div class="research-hero reveal">
+          <div class="research-title-block">
+            <span class="research-pill">Graduate Research Proposal</span>
+            <h3>生成式 AI 面試回饋之證據可追溯性對面試表現之影響</h3>
+            <p>
+              我希望檢驗：當生成式 AI 的面試回饋，不只告訴使用者「哪裡要改」，
+              而是能明確連回原始回答中的具體語句與行為證據時，是否能促進更深的反思，
+              並把學到的原則遷移到新的面試題目。
+            </p>
+          </div>
+
+          <div class="research-question">
+            <span>CORE QUESTION</span>
+            <strong>Evidence → Reflection → Transfer</strong>
+            <p>可追溯證據是否能讓回饋從「看懂」進一步轉化成「學會並應用」？</p>
+          </div>
+        </div>
+
+        <div class="research-flow reveal" aria-label="研究流程">
+          <div class="flow-step">
+            <span class="flow-no">01</span>
+            <div>
+              <small>BASELINE</small>
+              <strong>T1 面試作答</strong>
+              <p>建立受試者初始表現基準。</p>
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="flow-no">02</span>
+            <div>
+              <small>INTERVENTION</small>
+              <strong>AI 回饋</strong>
+              <p>比較證據可追溯與一般回饋形式。</p>
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="flow-no">03</span>
+            <div>
+              <small>TRANSFER</small>
+              <strong>T2 新題作答</strong>
+              <p>檢驗跨情境學習與表現遷移。</p>
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="flow-no">04</span>
+            <div>
+              <small>EVALUATION</small>
+              <strong>BARS＋人工盲評</strong>
+              <p>以行為錨定標準降低主觀評分偏差。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span>THEORY</span>
+            <h3>回饋 × 反思 × 後設認知</h3>
+            <p>
+              研究不只比較介面，而是以回饋介入、反思與後設認知觀點解釋：
+              為什麼「看得到證據」可能幫助學習者建立更清楚的心智模型。
+            </p>
+          </article>
+          <article class="research-card reveal reveal-delay-1">
+            <span>DESIGN</span>
+            <h3>固定模型條件與評分流程</h3>
+            <p>
+              控制模型版本、提示詞與生成參數，並採獨立人工評分與評分者一致性檢驗，
+              將 AI 系統操作轉化成可重現的實驗條件。
+            </p>
+          </article>
+          <article class="research-card reveal reveal-delay-2">
+            <span>CONTRIBUTION</span>
+            <h3>讓 AI 回饋更適合高影響情境</h3>
+            <p>
+              如果可追溯回饋能提升理解與遷移，相關設計原則可進一步延伸到招募、
+              學習科技與其他需要人機共同決策的場景。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="lexiai">
+      <div class="shell">
+        <div class="section-head section-head-light reveal">
+          <div>
+            <span class="section-index">03</span>
+            <span class="eyebrow">FEATURED CASE STUDY</span>
+          </div>
+          <h2>LexiAI：從一個畢業專題，走到我現在的研究問題。</h2>
+        </div>
+
+        <div class="project-hero reveal">
+          <div class="project-main">
+            <span class="project-tag">AI-ASSISTED TALENT SELECTION</span>
+            <h3>把非同步面試、語音文字化、LLM 分析與決策支援報表串成完整流程。</h3>
+            <p>
+              我們把專題當成產品來做：不是停在 Prompt demo，而是從企業甄選情境出發，
+              完成候選人面試、資料轉換、模型分析到前端報表的完整使用流程。
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-light" href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">Live Report Demo ↗</a>
+              <a class="btn btn-outline-light" href="https://github.com/chenhan0301/Report-template" target="_blank" rel="noopener">Source Code ↗</a>
+            </div>
+          </div>
+
+          <aside class="project-side">
+            <div class="project-side-row">
+              <span>Role</span>
+              <strong>Prompt / Evaluation Logic<br>Report UI / Dashboard</strong>
+            </div>
+            <div class="project-side-row">
+              <span>Output</span>
+              <strong>Structured interview<br>decision-support report</strong>
+            </div>
+            <div class="project-side-row">
+              <span>Positioning</span>
+              <strong>Complement human judgment,<br>not replace interviews</strong>
+            </div>
+          </aside>
+        </div>
+
+        <div class="system-map reveal">
+          <div class="system-node">
+            <span>01</span>
+            <strong>Asynchronous Interview</strong>
+            <small>候選人完成線上面試</small>
+          </div>
+          <div class="system-connector">+</div>
+          <div class="system-node">
+            <span>02</span>
+            <strong>Speech to Text</strong>
+            <small>回答轉換為可分析文本</small>
+          </div>
+          <div class="system-connector">+</div>
+          <div class="system-node">
+            <span>03</span>
+            <strong>LLM Analysis</strong>
+            <small>結構化評估與文字證據</small>
+          </div>
+          <div class="system-connector">=</div>
+          <div class="system-node system-node-accent">
+            <span>04</span>
+            <strong>Decision Support</strong>
+            <small>報表、追問與發展建議</small>
+          </div>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <span class="case-no">A</span>
+            <div>
+              <small>WHAT I BUILT</small>
+              <h3>Prompt 與評估邏輯</h3>
+              <p>
+                參考 Prompt Engineering 方法，反覆調整分析格式、評估面向與輸出結構，
+                讓模型產出能被前端報表穩定接收，也更接近 HR 實務閱讀需求。
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card reveal reveal-delay-1">
+            <span class="case-no">B</span>
+            <div>
+              <small>WHAT I BUILT</small>
+              <h3>報表頁面與資訊視覺化</h3>
+              <p>
+                運用資訊工程訓練實作報表與儀表板，整合回答完整性、內容品質、優弱勢、
+                人格特質、溝通分析、整體適配與發展建議。
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card case-card-wide reveal">
+            <span class="case-no">C</span>
+            <div>
+              <small>WHAT THE DATA TAUGHT ME</small>
+              <h3>驗證結果沒有支持「AI 可以取代傳統面試」——而這反而讓研究問題更清楚。</h3>
+              <p>
+                專題中，語言分析得到的人格分數與 HRDA 參考人格分數之同向度相關整體偏弱。
+                因此我們沒有把結果包裝成模型成功複製人類評估，而是把 LexiAI 重新定位為
+                <strong>互補式決策支援</strong>：提供可回看、可追問的結構化語言證據，補充面試官判斷。
+              </p>
+              <div class="insight-line">
+                <span>Prototype</span><i></i>
+                <span>Validation gap</span><i></i>
+                <span>Research question</span><i></i>
+                <span>Trustworthy AI</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-index">04</span>
+            <span class="eyebrow">EXPERIENCE</span>
+          </div>
+          <h2>除了技術與研究，我也持續練習把複雜工作推進到真正完成。</h2>
         </div>
 
         <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-time">畢業專題／專展</div>
-            <div class="timeline-content">
-              <h3>畢業專展總籌・跨系聯展協作</h3>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span>01</span></div>
+            <div class="timeline-meta">
+              <span>CAPSTONE EXHIBITION</span>
+              <strong>跨系協作 · 專案統籌</strong>
+            </div>
+            <div class="timeline-body">
+              <h3>畢業專展總籌</h3>
               <p>
-                擔任畢業專展總籌，協調科技系與設計相關合作事項；同時參與網路組與專題網站工作，
-                累積大型活動規劃、跨角色溝通與實際交付經驗。
+                擔任畢業專展總籌，參與與設計學系的跨系聯展協作，並同時支援網路組與專題網站工作。
+                這段經驗讓我更熟悉如何拆解大型任務、協調不同角色並在時間限制下完成交付。
               </p>
             </div>
           </article>
 
-          <article class="timeline-item">
-            <div class="timeline-time">學生組織</div>
-            <div class="timeline-content">
-              <h3>系學會與學生代表經驗</h3>
-              <p>
-                曾參與系學會體育事務與系級活動，培養在團隊內協調、執行與面對不同利害關係人的能力。
-              </p>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span>02</span></div>
+            <div class="timeline-meta">
+              <span>TEACHING</span>
+              <strong>2 years</strong>
             </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-time">社團經驗</div>
-            <div class="timeline-content">
-              <h3>熱音社攝影幹部</h3>
-              <p>
-                透過社團影像紀錄與活動支援，累積視覺溝通、現場協作與內容整理能力。
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-time">教學工作</div>
-            <div class="timeline-content">
+            <div class="timeline-body">
               <h3>補習班輔導老師</h3>
               <p>
-                具兩年輔導與教學現場經驗，讓我更熟悉如何理解學習者狀態、拆解問題與提供具體回饋。
+                兩年的輔導與教學現場經驗，使我反覆練習辨識學習者卡住的位置、拆解問題，
+                並用具體可理解的方式提供回饋；這也影響我後來對 AI 回饋設計的興趣。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span>03</span></div>
+            <div class="timeline-meta">
+              <span>STUDENT ORGANIZATION</span>
+              <strong>Leadership & coordination</strong>
+            </div>
+            <div class="timeline-body">
+              <h3>系學會與學生代表經驗</h3>
+              <p>
+                參與系學會體育事務、全系活動與學生代表工作，累積組織內協作、
+                溝通與現場執行能力。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span>04</span></div>
+            <div class="timeline-meta">
+              <span>CREATIVE TEAM</span>
+              <strong>Visual communication</strong>
+            </div>
+            <div class="timeline-body">
+              <h3>熱音社攝影幹部</h3>
+              <p>
+                負責活動影像紀錄與視覺內容支援，培養我對資訊呈現、敘事與使用者感受的敏感度。
               </p>
             </div>
           </article>
@@ -284,92 +502,124 @@
       </div>
     </section>
 
-    <section id="credentials" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
+    <section class="section credentials-section" id="credentials">
+      <div class="shell">
+        <div class="section-head reveal">
           <div>
-            <div class="eyebrow">Credentials & Skills</div>
-            <h2>以研究可用性為導向累積能力。</h2>
+            <span class="section-index">05</span>
+            <span class="eyebrow">CREDENTIALS</span>
           </div>
-          <p>
-            我的能力組合主要服務於三件事：理解人資情境、處理與分析資料、把研究概念做成可測試的系統。
-          </p>
+          <h2>我的能力組合，服務於同一件事：把研究問題做成可以被驗證的系統。</h2>
         </div>
 
-        <div class="grid-3">
-          <article class="card credential">
-            <div class="mini-label">English</div>
-            <strong>TOEIC 895</strong>
-            <span>Listening 485 · Reading 410</span>
+        <div class="credential-grid">
+          <article class="credential-card credential-highlight reveal">
+            <span>ENGLISH</span>
+            <strong>895</strong>
+            <h3>TOEIC L&R</h3>
+            <p>Listening 485 · Reading 410</p>
           </article>
 
-          <article class="card credential">
-            <div class="mini-label">HR Certification</div>
+          <article class="credential-card reveal reveal-delay-1">
+            <span>HUMAN RESOURCES</span>
             <strong>aPHRi</strong>
-            <span>Associate Professional in Human Resources – International</span>
+            <h3>HRCI International</h3>
+            <p>Associate Professional in Human Resources – International</p>
           </article>
 
-          <article class="card credential">
-            <div class="mini-label">Academic English</div>
-            <strong>EMI Certificate</strong>
-            <span>English-Medium Instruction program completion</span>
+          <article class="credential-card reveal reveal-delay-2">
+            <span>ACADEMIC ENGLISH</span>
+            <strong>EMI</strong>
+            <h3>Program Certificate</h3>
+            <p>English-Medium Instruction academic training</p>
           </article>
         </div>
 
-        <div class="grid-2" style="margin-top:18px;">
-          <article class="card skill-card">
-            <div class="mini-label">Human Resources</div>
-            <h3>HR & People Analytics</h3>
-            <div class="skill-row">
+        <div class="skills-layout">
+          <article class="skill-column reveal">
+            <div class="skill-head">
+              <span>01</span>
+              <h3>Human Resources</h3>
+            </div>
+            <div class="skill-tags">
               <span>Human Resource Development</span>
               <span>Human Resource Management</span>
               <span>People Analytics</span>
               <span>Training Evaluation</span>
               <span>Talent Selection</span>
+              <span>Behavioral Assessment</span>
             </div>
           </article>
 
-          <article class="card skill-card">
-            <div class="mini-label">Technology</div>
-            <h3>Programming & System Building</h3>
-            <div class="skill-row">
+          <article class="skill-column reveal reveal-delay-1">
+            <div class="skill-head">
+              <span>02</span>
+              <h3>Technology</h3>
+            </div>
+            <div class="skill-tags">
               <span>Web Development</span>
-              <span>Database</span>
+              <span>Database Systems</span>
               <span>Data Analysis</span>
+              <span>LLM Application</span>
               <span>Prompt Engineering</span>
               <span>Dashboard Design</span>
-              <span>LLM Application</span>
+            </div>
+          </article>
+
+          <article class="skill-column reveal reveal-delay-2">
+            <div class="skill-head">
+              <span>03</span>
+              <h3>Research Direction</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Human–AI Interaction</span>
+              <span>Explainability</span>
+              <span>Evidence Traceability</span>
+              <span>Learning Transfer</span>
+              <span>Decision Support</span>
+              <span>Trustworthy AI</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section contact">
-      <div class="container">
-        <div class="contact-panel">
-          <div>
-            <div class="eyebrow">Portfolio</div>
-            <h2>這個網站將持續作為我的研究與專案索引。</h2>
-            <p>
-              推甄階段我希望以公開、可驗證的方式呈現實作成果。你可以從 GitHub 查看程式與專案，
-              或直接開啟 LexiAI 報表 Demo 了解系統輸出與介面設計。
-            </p>
-          </div>
+    <section class="section closing-section">
+      <div class="shell closing-grid">
+        <div class="closing-copy reveal">
+          <span class="eyebrow">NEXT CHAPTER</span>
+          <h2>從可以運作的系統，走向可以被信任的研究。</h2>
+          <p>
+            研究所階段，我希望持續把資訊技術、人因與組織情境放在同一個問題框架下，
+            透過更扎實的研究方法與系統實作，理解 AI 如何成為更透明、更可靠的決策夥伴。
+          </p>
+        </div>
 
-          <div class="hero-actions">
-            <a class="button primary" href="https://github.com/chenhan0301" target="_blank" rel="noopener">GitHub ↗</a>
-            <a class="button secondary" href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">LexiAI Demo ↗</a>
-          </div>
+        <div class="closing-links reveal reveal-delay-1">
+          <a href="https://github.com/chenhan0301" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <strong>View repositories ↗</strong>
+          </a>
+          <a href="https://chenhan0301.github.io/Report-template/" target="_blank" rel="noopener">
+            <span>LexiAI</span>
+            <strong>Open live report demo ↗</strong>
+          </a>
+          <a href="#top">
+            <span>Portfolio</span>
+            <strong>Back to top ↑</strong>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© 2026 董承翰 Chenhan Tung · Graduate Admissions Portfolio</span>
-      <a href="#top">Back to top ↑</a>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <strong>董承翰 Chenhan Tung</strong>
+        <span>Graduate Research Portfolio · 2026</span>
+      </div>
+      <p>Human Resources × Computer Science × Trustworthy AI</p>
     </div>
   </footer>
 </body>
