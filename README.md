@@ -4,6 +4,8 @@
 
 **Human Resources × Computer Science × Trustworthy AI**
 
+> 66 university courses · 159 earned credits · HRD major · Computer Science double major · EMI certificate
+
 這個 repository 最早建立於大二的「網際網路概論」課程，當時只是我的第一個 Bootstrap 個人網站。
 
 四年後，我把它重新整理成一份完整的大學學習歷程：不是只展示最後做出的作品，而是保留我如何從 **人力資源 → 網頁開發 → Python 資料分析 → 資料庫系統 → AI 選才專題 → 可信任 AI 研究** 一步一步累積能力的過程。
@@ -91,6 +93,22 @@ Final Project 為 **Library Management System**，將 Books、Users、Loans 三�
 
 ---
 
+## Current graduate research directions
+
+### HRD / People & Learning
+**生成式 AI 面試回饋之證據可追溯性對面試表現之影響**
+
+Evidence Traceability · Feedback · Reflection · Learning Transfer · BARS
+
+### Information Systems / FinTech
+**金融防詐決策支援系統之設計與評估：整合可追溯證據與校準不確定性**
+
+Appropriate Reliance · Calibration · Evidence · Human–AI Decision Making
+
+兩條路線共享同一個核心：**讓 AI 的判斷可理解、可核對，並促進更適當的人機決策。**
+
+---
+
 ## Current research interests
 
 - Generative AI
@@ -110,6 +128,26 @@ Final Project 為 **Library Management System**，將 Books、Users、Loans 三�
 - **TOEIC L&R 895** — Listening 485 / Reading 410
 - **aPHRi** — Associate Professional in Human Resources – International
 - **EMI Certificate** — English-Medium Instruction program
+
+---
+
+## Selected applied AI project
+
+### Personal AI Agent · 2026
+Telegram voice/text → AI Agent → external information → structured analysis → Telegram + Notion persistence.
+
+[Read the project documentation](./PROJECTS/AI-AGENT.md)
+
+---
+
+## Selected recognition
+
+- **2025 第八屆「致青春・創未來」全國選拔大賽｜科技應用組優等獎** — LexiAI
+- **系上專題製作成果展｜優等**
+- **第十三屆、第十五屆程式設計通識課程專題｜佳作**
+- **五育獎學金｜美育獎**
+
+[Recognition & evidence index](./RECOGNITION.md)
 
 ---
 
@@ -134,6 +172,8 @@ Final Project 為 **Library Management System**，將 Books、Users、Loans 三�
 - **Portfolio:** https://chenhan0301.github.io/Myweb/
 - **Full learning journey:** [LEARNING-JOURNEY.md](./LEARNING-JOURNEY.md)
 - **Academic coursework & capability map:** [ACADEMIC-COURSEWORK.md](./ACADEMIC-COURSEWORK.md)
+- **AI Agent project:** [PROJECTS/AI-AGENT.md](./PROJECTS/AI-AGENT.md)
+- **Recognition & evidence:** [RECOGNITION.md](./RECOGNITION.md)
 - **GitHub profile:** https://github.com/chenhan0301
 
 ---
